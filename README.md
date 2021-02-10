@@ -16,3 +16,6 @@ To start the project you need to clone the code from this repository to open in 
 - Banks contain a list of banks for which it is possible to use CRUD-operations by clicking on the appropriate buttons. (To add a new bank, you need to click on the bank icon at the bottom of the page). With the "Show" button you can view the mortgage transactions on the selected bank.
 - Calculator contains a calculator for calculating a mortgage loan in case of a successful transaction displays a table of calculations.
 - Charts displays charts for all banks according to their criteria.
+
+## Used libraries: React, Redux
+## Database: Firebase
