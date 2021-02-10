@@ -1,0 +1,51 @@
+.calculator { 
+	width: 500px;
+	height: 500px;
+  margin-top: 50px;
+}
+.form-calculate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 420px;
+  height: 300px;
+}
+.block-calculate{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 400px;
+  height: 60px;
+  padding: 5px;
+}
+.textCalculate {
+  margin: 3%;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 80%;
+  width: 30%;
+}
+.block-input {
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  width: 70%;
+}
+.input-value{
+	width: 256.64px;
+}
+
+.buttonCheck{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 400px;
+	height: 60px;
+	padding: 5px;
+}

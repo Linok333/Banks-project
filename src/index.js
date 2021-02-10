@@ -1,17 +1,34 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Provider } from 'react-redux';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import store from './store';
+import Navbar from './components/Navbar';
+import Main from './Pages/Main';
+import CreatePage from './Pages/CreatePage';
+import UpdatePage from './Pages/UpdatePage';
+import CalculatorPage from './Pages/CalculatorPage/CalculatorPage';
+import ShowHistory from './Pages/ShowHistory';
+import ChartsPage from './Pages/ChartsPage';
+import { Firebase } from './components/lib/firebase.prod';
+import { FirebaseContext } from './contexts';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+	<Provider store={store}>
+		<FirebaseContext.Provider value={new Firebase()}>
+			<Router>
+				<Navbar/>
+				<Route path="/Banks" component={App}/>
+				<Route path="/" exact component={Main}/>
+				<Route path="/CreateBank" component={CreatePage}/>
+				<Route path="/UpdateBank/:id" component={UpdatePage}/>
+				<Route path="/CalculatorPage" component={CalculatorPage}/>
+				<Route path="/ShowHistory/:id" component={ShowHistory}/>
+				<Route path="/Charts" component={ChartsPage}/>
+			</Router>
+		</FirebaseContext.Provider>
+	</Provider>,
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+	document.getElementById('root'),
+);

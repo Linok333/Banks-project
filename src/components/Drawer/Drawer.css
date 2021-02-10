@@ -1,0 +1,38 @@
+.dra {
+	width: 350px;
+	background-color: crimson;
+}
+.drawer-box {	display: flex;
+	flex-direction: column;
+}
+.drab {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 239px;
+	/* margin-top: 15px; */
+	height: 53px;
+}
+.drab:hover {
+	background-color: rgb(240, 239, 239);
+}
+.w {
+	margin-left: 15px;
+	display: flex;
+	width: 60px;
+	height: 53px;
+	justify-content: flex-start;
+	align-items: center ;
+}
+.h {
+	display: flex;
+	width: 165px;
+	height: 53px;
+	justify-content: flex-start;
+	align-items:center;
+}
+.lil {
+	color: rgb(29, 23, 23);
+	text-decoration: none;
+}

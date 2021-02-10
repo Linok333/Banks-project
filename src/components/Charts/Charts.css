@@ -1,0 +1,17 @@
+.charts {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+	flex-direction: column;
+}
+.block-chart {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+}
+.chart {
+	margin-left: 150px;
+}

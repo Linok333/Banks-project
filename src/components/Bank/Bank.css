@@ -1,0 +1,9 @@
+.bank {
+	width: 400px;
+	height: 200px;
+	display: flex;
+	flex-direction: row;
+	background-image: url('https://image.freepik.com/free-vector/elegant-white-texture-background_23-2148431731.jpg');
+	border-radius: 5%;
+	border: rgb(6, 66, 66) solid 2px;
+}

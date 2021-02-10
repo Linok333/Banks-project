@@ -1,25 +1,16 @@
-import logo from './logo.svg';
+import { withRouter } from 'react-router';
+import BankList from './components/BankList';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function App({ history }) {
+	return (
+		<div className="app">
+			<span className="text-banks"> Banks </span>
+			<BankList />
+			<img onClick={() => history.push('./CreateBank')}
+				width="110px" height="110px" className="createBank" src="https://static.thenounproject.com/png/948521-200.png"/>
+		</div>
+	);
 }
 
-export default App;
+export default withRouter(App);

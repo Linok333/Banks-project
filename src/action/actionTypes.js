@@ -1,0 +1,2 @@
+export const GET_DATA = 'GET_DATA';
+export const MORTGAGE_CALCULATOR = 'MORTGAGE_CALCULATOR';

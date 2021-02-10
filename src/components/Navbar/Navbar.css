@@ -1,0 +1,28 @@
+.MainPage{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  /* margin-top: 100px; */
+  margin-right: 3%;
+  height: 50px;
+  width: 100%;
+  background-color: rgb(137, 192, 218);
+}
+.second {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+ }
+.card1 {
+display: flex;
+justify-content: flex-start;
+ width: 50%;
+ height: 100%;
+}
+ /* .h {
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+ } */
